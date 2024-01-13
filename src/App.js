@@ -1,12 +1,13 @@
-import './App.css';
-import RegistrationForm from './Test/RegistrationForm';
+
+import { RouterProvider } from 'react-router-dom';
+import { routers } from './routes.tsx';
 
 function App() {
   return (
     <div className="App">
-        <RegistrationForm />
+    <RouterProvider router={routers}/>
     </div>
-);
+  );
 }
 
 export default App;
