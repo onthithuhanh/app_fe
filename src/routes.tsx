@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Login from "./Page/Authenticator/Login/Login";
 import Reissue from "./Page/Authenticator/Reissue/Reissue";
+import Admin from "./Page/Authenticator/Admin/Admin";
 
 export const routers = createBrowserRouter([ 
   { 
@@ -20,5 +21,8 @@ export const routers = createBrowserRouter([
     path: "/reissue", 
     element: <Reissue />, 
   }, 
-  
+  {
+    path: "/Admin",
+    element: <Admin />, 
+  },
 ]); 
